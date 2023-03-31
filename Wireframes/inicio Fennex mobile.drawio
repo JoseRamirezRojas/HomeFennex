@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2023-03-31T18:38:06.667Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="Q8bmeBL12qzCJ45EP9_A" version="21.1.1" type="device">
+  <diagram name="Page-1" id="03018318-947c-dd8e-b7a3-06fadd420f32">
+    <mxGraphModel dx="812" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="677b7b8949515195-1" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="50" width="570" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-2" value="CSS" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=28;align=center;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="72.5" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-9" value="" style="line;strokeWidth=1;html=1;rounded=0;shadow=0;labelBackgroundColor=none;fillColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;align=center;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="140" width="570" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-15" value="&lt;div style=&quot;font-size: 16px;&quot; align=&quot;left&quot;&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Características&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot; align=&quot;left&quot;&gt;&lt;ul style=&quot;font-size: 16px;&quot;&gt;&lt;li style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 16px;&quot;&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=16;align=center;verticalAlign=top;spacing=10;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="530" width="570" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-16" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="150" width="550" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-42" value="&lt;li&gt;&lt;span&gt;Herramienta digital para ... lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" parent="1" vertex="1">
+          <mxGeometry x="80" y="380" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="677b7b8949515195-44" value="&lt;h1 class=&quot;fw-400 mt-2 mb-1_5 lh-110&quot;&gt;&lt;span&gt;Fennex &lt;br&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 class=&quot;fw-400 mt-2 mb-1_5 lh-110&quot;&gt;&lt;span&gt;para enseñar y aprender &lt;br&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 class=&quot;fw-400 mt-2 mb-1_5 lh-110&quot;&gt;&lt;span&gt;Química Analítica&lt;br&gt;&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=14;fontFamily=Verdana" parent="1" vertex="1">
+          <mxGeometry x="65" y="180" width="540" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-5" value="&lt;div style=&quot;font-size: 14px;&quot; align=&quot;left&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Recursos&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot; align=&quot;left&quot;&gt;&lt;ul style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=14;align=center;verticalAlign=top;spacing=10;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1190" width="570" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-6" value="&lt;div style=&quot;font-size: 14px;&quot; align=&quot;left&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Tutoriales&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot; align=&quot;left&quot;&gt;&lt;ul style=&quot;font-size: 14px;&quot;&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=14;align=center;verticalAlign=top;spacing=10;comic=1;spacingTop=4;" parent="1" vertex="1">
+          <mxGeometry x="30" y="870" width="570" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-7" value="Iniciar graficadora" style="rounded=1;align=center;fillColor=#F1F2F4;strokeColor=none;html=1;fontColor=#596780;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="245" y="425" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-15" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="1880" width="125" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-18" value="CSS" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=28;align=center;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="1830" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-19" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-media-2198/64/twitter_social_media_network-128.png;fontSize=21;" parent="1" vertex="1">
+          <mxGeometry x="210" y="2279" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-20" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Facebook-Outline-128.png;fontSize=21;" parent="1" vertex="1">
+          <mxGeometry x="216" y="2379" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Instagram-Outline-128.png;fontSize=21;" parent="1" vertex="1">
+          <mxGeometry x="372.5" y="2379" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-22" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;Secciones&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;Blog académico&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Acerca de &lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&amp;nbsp;Contáctanos&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;align=center;verticalAlign=top;spacing=10;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="192.5" y="1989" width="247.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-23" value="&lt;div align=&quot;center&quot;&gt;&lt;b&gt;Productos&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Lorem ipsum dolor sit amet,&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;align=center;verticalAlign=top;spacing=10;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="2139" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-24" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="70" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="qzdg0y0NbztXllVDpb6M-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/menu-128.png" parent="1" vertex="1">
+          <mxGeometry x="65" y="60" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-youtube-outline-128.png" vertex="1" parent="1">
+          <mxGeometry x="370" y="2279" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="30" y="1510" width="570" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-8" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Otros productos&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;align=center;verticalAlign=top;spacing=10;comic=1;" parent="EBiegxN-xSHhAEUn3Gv0-2" vertex="1">
+          <mxGeometry width="570" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gSYMleGjobc_3HVmTVTi-9" value="[]" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=28;align=center;comic=1;" parent="EBiegxN-xSHhAEUn3Gv0-2" vertex="1">
+          <mxGeometry x="210" y="63.043478260869556" width="143.33" height="194.2495652173913" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-8" value="[]" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=28;align=center;comic=1;" vertex="1" parent="EBiegxN-xSHhAEUn3Gv0-2">
+          <mxGeometry x="410" y="71.90739130434783" width="123.33" height="176.52173913043475" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-10" value="[]" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=28;align=center;comic=1;" vertex="1" parent="EBiegxN-xSHhAEUn3Gv0-2">
+          <mxGeometry x="30" y="71.90739130434778" width="123.33" height="176.52173913043475" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-11" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/user-interface-169/32/chevron-right-128.png;rotation=-180;" vertex="1" parent="EBiegxN-xSHhAEUn3Gv0-2">
+          <mxGeometry x="170" y="141.2552173913043" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/user-interface-169/32/chevron-right-128.png;rotation=0;" vertex="1" parent="EBiegxN-xSHhAEUn3Gv0-2">
+          <mxGeometry x="370" y="141.25521739130434" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/css-vol-1/24/collage-128.png;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="196.25" y="622.5" width="257.5" height="257.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-6" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;comic=1;" vertex="1" parent="1">
+          <mxGeometry x="203.75" y="1010" width="242.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EBiegxN-xSHhAEUn3Gv0-7" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=14;fontColor=#000000;comic=1;" vertex="1" parent="1">
+          <mxGeometry x="203.75" y="1310" width="242.5" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,7 +1,7 @@
-// change navbar color on scroll
+// change navbar color on scroll on large devices
 var nav = document.getElementById('nav');
   window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 250) {
       nav.classList.add('bg-nav');
     } else {
       nav.classList.remove('bg-nav');
@@ -45,4 +45,22 @@ $(document).on("scroll", function() {
       $(tag).removeClass("visible");
     }
   }
+});
+
+// video carousel for tutorials section
+const carouselContainer = document.querySelector('.carousel-container');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+
+let currentIndex = 0;
+const slideWidth = carouselContainer.clientWidth;
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + carouselContainer.children.length) % carouselContainer.children.length;
+  carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % carouselContainer.children.length;
+  carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 });

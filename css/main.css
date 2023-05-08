@@ -90,7 +90,7 @@ body{
 }
 
 .menu-items a:hover{
-    color: #ddd;
+    color: #eee;
     text-decoration: underline;
     text-decoration-color: #fff;
     text-decoration-thickness: 2px;
@@ -111,15 +111,6 @@ body{
     background: linear-gradient(to left bottom, #959ce8, #858be2 , #757adc, #6668d5, #5757ce, 97%, #333 101%);
     display: inline-flex;
 }
-
-/*.top-image img {
-    transition: transform 1.8s ease-in-out; 
-    width: 100%;
-}
-
-.top-image img:hover{
-    transform: scale(1.2) rotate(-2deg) ;
-}*/
 
 .top-image h1{
     position: relative;
@@ -201,7 +192,7 @@ body{
 	background-size: cover;
 	background-position: center;
     margin-top: -4px;
-    margin-bottom: 16px;
+    margin-bottom: 64px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -212,6 +203,11 @@ body{
 .parallax h1{
     font-weight: 900;
     margin: 45px 45px 0 45px;
+    text-align: center;
+}
+
+.parallax-divider h1{
+    margin-top: 48px;
 }
 
 .parallax h2{
@@ -251,7 +247,6 @@ body{
 /* Style for the two divs */
 .left-div {
     position: relative;
-    opacity: 0;
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin-top: 16px;
@@ -260,7 +255,6 @@ body{
 
 .right-div{
     position: relative;
-    opacity: 0;
     display: grid;
     grid-template-columns: 2fr 3fr;
     margin-top: 16px;
@@ -268,61 +262,76 @@ body{
     text-align: end;
 }
 
-.video-carousel {
+.tutorials h1{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+.carousel-container {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    max-width: 800px;
+    height: 560px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
     display: flex;
-    padding-bottom: 44px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 0 1rem;
   }
   
-  .carousel-container {
-    margin: 1%;
-    display: flex;
-    width: 98%;
-    transition: transform 0.3s ease-in-out;
-  }
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 1rem;
+    scroll-snap-align: center;
+}
   
-  .carousel-slide {
-    flex: 0 0 100%;
-    width: 98%;
-  }
-  
-  .carousel-slide iframe {
-    width: 98%;
-    height: 400px; /* Adjust the height as needed */
-  }
-  
-  .carousel-prev,
-  .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 15px 10px 15px;
-    background-color: #000;
-    color: #fff;
+iframe {
+    width: 100%;
+    height: 440px;
     border: none;
-    outline: none;
+}
+  
+.carousel-controls {
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+  
+.prev-button, .next-button {
+    background: #15161c;
+    padding: 0 16px;
+    border-radius: 20%;
+    font-size: 2rem;
+    color: #6668d5;
+    margin: 0 1rem;
     cursor: pointer;
-  }
+}
   
-  .carousel-prev {
-    left: 1.5%;
-  }
-  
-  .carousel-next {
-    right: 3%;
-  }
+.prev-button:focus, .next-button:focus {
+    outline: none;
+}  
   
 .tag {
     opacity: 0;
     transform: translate(0, 10vh);
-    transition: all 0.63s;
+    transition: all 0.71s;
 }
   
-.tag.visible {
+.visible {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+.projects-section h1{
+    margin-top: 50px;
 }
 
 .projects{
@@ -380,13 +389,6 @@ footer h4{
     font-family: Tajawal;
 }
 
-.blue-line{
-    border-top: 5px;
-    background-color: #959ce8;
-    height: 1px;
-    width: 99%;
-}
-
 .footer-row{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
@@ -427,14 +429,14 @@ footer h4{
         cursor: pointer;
         position: absolute;
         left: 85%;
-        top: 20px;
+        top: 14px;
         z-index: 2;
-        padding: 8px;
+        padding: 8px 8px 16px 8px;
         border-radius: 18%;
     }
 
     .nav-btn span {
-        background: #3a3a3a;
+        background: #eee;
         display: block;
         height: 3px;
         margin: 4px 0;
@@ -459,7 +461,7 @@ footer h4{
         position: absolute;
         top: 70px;
         left: 0;
-        background: radial-gradient(at top left, #5757ce 68%, #757adc,#858be2, #959ce8 );
+        background: radial-gradient(at top left, #5757ce 70%, #757adc,#858be2, #959ce8 );
         /*background: linear-gradient(to top, #959ce8, #5757ce);*/
         z-index: 1;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -533,6 +535,15 @@ footer h4{
     .left-div{
         display: flex;
         flex-direction: column;
+    }
+
+    .tutorials h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .tutorials p{
+        text-align: center;
     }
 
     .projects{

@@ -4,11 +4,11 @@ var nav = document.getElementById('nav');
     if (window.pageYOffset > 250) {
       nav.classList.add('bg-nav');
     } else {
-      nav.classList.remove('bg-nav');
+      nav.classList.remove('bg-nav'); 
     }
 });
 
-// slightly move banner image w cursor
+// slightly move banner image with cursor
 const img = document.getElementById('fennex-image');
 const imgWidth = img.offsetWidth;
 
@@ -17,7 +17,7 @@ img.addEventListener('mousemove', e => {
     const xPercent = (xPos / window.innerWidth) * 100;
     const xMovement = (xPercent - 50) / 10;
 
-    img.style.transform = `translate(${xMovement}px, 0`; 
+    img.style.transform = `translate(${xMovement}px, 0`;  // movement acording to cursor position
 });
 img.addEventListener('mouseleave', e => {
     img.style.transform = 'translate(0px, 0px)';
@@ -26,41 +26,48 @@ img.addEventListener('mouseleave', e => {
 // parallax effect
 const parallaxBackground = document.querySelector('.parallax');
 window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset;
-    const parallaxPosition = scrollTop * 0.5;
+    const scrollTop = window.pageYOffset; // on scroll background moves slower
+    const parallaxPosition = scrollTop * 0.5; 
 });
 
-// fading in images from below, using jquery for selector simplicity
-$(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
-
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
+// fading in images from below
+var tags = document.querySelectorAll(".tag");
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: .15   // percentage of visibility to trigger animation 
+}
+const callbacks = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('visible');
     }
-  }
+    else {
+      entry.target.classList.remove('visible'); //animates whenever elements return to viewport
+    }
+  });
+}
+let observer = new IntersectionObserver(callbacks, options); // checks if element intersect viewport
+tags.forEach(element => {
+  observer.observe(element);
 });
 
 // video carousel for tutorials section
-const carouselContainer = document.querySelector('.carousel-container');
-const prevButton = document.querySelector('.carousel-prev');
-const nextButton = document.querySelector('.carousel-next');
-
-let currentIndex = 0;
-const slideWidth = carouselContainer.clientWidth;
+const carousel = document.querySelector('.carousel');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
 
 prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + carouselContainer.children.length) % carouselContainer.children.length;
-  carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  carousel.scrollBy({
+    left: -carousel.offsetWidth,
+    behavior: 'smooth'
+  });
 });
 
 nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % carouselContainer.children.length;
-  carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  carousel.scrollBy({
+    left: carousel.offsetWidth,
+    behavior: 'smooth'
+  });
 });
+

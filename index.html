@@ -5,185 +5,210 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CSS</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="icon" href="img/icon.png" type="image/x-icon"  />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal&family=Athiti:wght@500">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body >
-  <!-- HEADER -->
-  <div class="top-image">
-    <h1>Chemical Science for Students</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-  </div>
-  <nav class="fixed-navbar" id="nav">
-    <div id="menu" class="menu"> 
-      <a href="#">
-        <img src="img/Logo-04.png" alt="CSS" id="css-logo" > 
-      </a>
-      <input type="checkbox" id="nav-check">
-      <label for="nav-check" class="nav-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="menu-items">
-        <li><a id="first-link-nav" href="#">INICIO</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">ACERCA DE</a></li>
-        <li><a  href="#">CONTACTO</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="fennex-banner">
-    <div> 
-      <a href="#">
-        <img id="fennex-image" src="img/fennex_dummy.jpg" alt=""> 
-      </a> 
-    </div>
-    <div> 
-      <h2>Fennex</h2> 
-      <h3>Para enseñar y aprender Química Analítica</h3>
-      <button onclick="location.href='#'">
-        Iniciar graficadora
+
+<body id="body">
+  <main id="app">
+      <!-- HEADER -->
+    <header class="header-container flex-container">
+      <!-- -->
+      <img class="logo-img" src="img/fennexLogo.svg">
+      <nav id="navigationMenu" class="menu-container">
+        <a class="menu-link menu-selection">INICIO</a>
+        <a class="menu-link">BLOG</a>
+        <a class="menu-link ">ACERCA DE</a>
+        <a class="menu-link ">DEMO</a>
+        <a class="menu-link">CSS</a>
+        <a class="menu-link">CONTACTO</a>
+      </nav>
+      <button class="menu-burger-button" @click="showMenu('burger')">
+        <i class="fa-solid fa-bars"></i>
       </button>
-    </div>
-  </div>
-  <div class="parallax" >
-    <h1 >Características</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-    <ul>
-      <li> Característica 1 </li>
-      <li> Característica 2 </li>
-      <li> Característica 3 </li>
-    </ul> 
-    <div class="left-div tag">
-      <div>
-        <h2 > Característica 1</h2>
-        <p>fade in from below</p>
-      </div>
-      <img src="img/placeholder.png" alt="tutoriales">
-    </div>
-    <div class="right-div tag">
-      <img src="img/placeholder.png" alt="recursos">
-      <div>
-        <h2>Característica 2</h2>
-        <p>fade in from below</p>
-      </div>
-    </div>
-    <div class="left-div tag">
-      <div>
-        <h2 > Característica 3</h2>
-        <p>fade in from below</p>
-      </div>
-      <img src="img/placeholder.png" alt="tutoriales">
-    </div>
-  </div>
-  <div class="parallax-divider">
-    <h1 >Más información</h1>
-  </div>
-  <div class="parallax">
-    <div class="right-div tag">
-      <img src="img/placeholder.png" alt="recursos">
-      <div>
-        <h1 >Recursos</h1>
-        <a href=""><p>fade in from below. Visit res</p> </a> 
-      </div>
-    </div>
-    <div class="left-div tag">
-      <div>
-        <h1 >Blog</h1>
-        <a href=""><p>fade in from below. Visit blog</p> </a> 
-      </div>
-      <img src="img/placeholder.png" alt="recursos">
-    </div>
+    </header>
 
-    <div class="tutorials">
-      <h1 >Tutoriales</h1>
-      <a href="https://www.youtube.com/@WolframResearch"> <p >fade in from below. Visit Youtube channel</p> </a>
-    </div>
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item">
-          <iframe src="https://www.youtube.com/embed/DxzWqkdvVI4"></iframe>
-        </div>
-        <div class="carousel-item">
-          <iframe src="https://www.youtube.com/embed/MfI1gA910Cw"></iframe>
-        </div>
-        <div class="carousel-item">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-        </div>
-      </div>
-      <div class="carousel-controls">
-        <button class="prev-button">&lt;</button>
-        <button class="next-button">&gt;</button>
-      </div>
-    </div>
-    
-  </div>
-  
-  <!-- WIDGETS -->
-  <section class="projects-section">
-    <h1 >Otras aplicaciones</h1>
-    <div class="projects" >
-      <div  > 
-        <a  href="#"> 
-          <div class="widget" >
-            <div >
-              <h2>Proyecto1</h2>
-            </div>
+    <main>
+      <section class="hero">
+        <img src="img/Logo-02.png" alt="logo-2-hero"> 
+        <p class="fluid-font-paragraph" >Química Analítica. Más facil</p>
+        <a href="#" class="hero-button">Iniciar graficadora</a>
+      </section>
+
+      <!-- button scroll back -->
+      <button id="scrollTopBtn" class="scroll-top" title="Regresar" @click="scrollBack">
+        <i class="fa-solid fa-caret-up"></i>
+      </button>
+
+      <section >
+        <h1 class="fluid-font-title">¿Qué es Fennex?</h1> 
+        <p class="fluid-font-paragraph tag-up">Fennex es una aplicación mexicana con el objetivo de lorem ipsum dolor sit amet, consectetur adipiscing elit. Pelientesque quam augue, placerat eu lorem a orem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Pelientesque quam augue, placerat eu lorem a orem ipsum dolor sit amet, consectetur adipiscing elit. Pelientesque quam augue, placerat eu lorem a orem.</p>
+      </section>
+
+      <!--Carrusel  Features  -->
+      <h2 class=" title-row fluid-font-title" id="conoce-al-equipo">¿Qué puedes hacer con Fennex?</h2>
+      <section class="carousel-container utility-container tag-up">
+        <main class="carousel-view">
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                <img class="card-img" src="img/placeholder.png"/>    
+                <div class="card-title">Graficación de valoraciones ácido-base</div>
+              </article>
+            </article>
+          </article>
+
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                <img class="card-img" src="img/placeholder.png"/>    
+                <div class="card-title">Cálculo de puntos de equivalencia</div>
+              </article>
+            </article>
+          </article>
+
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                  <img class="card-img" src="img/placeholder.png"/>    
+                  <div class="card-title">Cálculo de pH al punto de equivalencia</div>
+                  </article>
+            </article>
+          </article>
+
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                <img class="card-img" src="img/placeholder.png"/>    
+                <div class="card-title">Característica 4</div>
+              </article>
+            </article>
+          </article>
+
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                <img class="card-img" src="img/placeholder.png"/>    
+                <div class="card-title">Característica 5</div>
+              </article>
+            </article>
+          </article>
+
+          <article class="carousel-item">
+            <article class="card-container">
+              <article class="card">
+                <img class="card-img" src="img/placeholder.png"/>    
+                <div class="card-title">Característica 6</div>
+              </article>
+            </article>
+          </article>
+        </main>
+        <button class="btn-carousel btn-carousel--left">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <button class="btn-carousel btn-carousel--right">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </section>  
+
+      <h2 class=" title-row fluid-font-title" id="conoce-al-equipo"> Blog </h2>
+      <section class="row tag-right">
+        <section class="img-col">
+          <img src="img/placeholder.png"/>
+        </section>
+        <section class="col ">
+          <h3></h3>
+          <p class=" fluid-font-paragraph">
+            Pelientesque quam augue, placerat eu lorem a orem ipsum dolor sit amet, consectetur adipiscing elit. Pelientesque quam augue, placerat eu lorem a orem ipsum dolor sit amet, consectetur adipiscing elit. Pelientesque quam augue, placerat eu lorem a orem.
+          </p>
+        </section>
+      </section>
+      <section class="row tag-right">
+        <section class="col ">
+          <p class="fluid-font-paragraph">
+            <span class="highlighted">Nuestra misión</span> es lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Pellentesque quam
+            augue, placerat eu lorem a orem ipsum
+            dolor sit amet, consectetur adipiscing elit
+          </p>
+        </section>
+        <section class="img-col">
+          <img class="image walk-in-right" src="img/placeholder.png"/>
+        </section>
+      </section>
+            <div class="parallax" >
+        <h1 >Características</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+        <ul>
+          <li> Característica 1 </li>
+          <li> Característica 2 </li>
+          <li> Característica 3 </li>
+        </ul> 
+        <div class="left-div tag-up">
+          <div>
+            <h2 > Característica 1</h2>
+            <p>fade in from below</p>
           </div>
-        </a>
-      </div>
-      <div></div>
-      <div > 
-        <a  href="">
-          <div class="widget" >
-            <div >
-              <h2>Proyecto2</h2>
-            </div>
+          <img src="img/placeholder.png" alt="tutoriales">
+        </div>
+        <div class="right-div tag-up">
+          <img src="img/placeholder.png" alt="recursos">
+          <div>
+            <h2>Característica 2</h2>
+            <p>fade in from below</p>
           </div>
-        </a>
+        </div>
+        <div class="left-div tag-up">
+          <div>
+            <h2 > Característica 3</h2>
+            <p>fade in from below</p>
+          </div>
+          <img src="img/placeholder.png" alt="tutoriales">
+        </div>
       </div>
-    </div>
-  </section> <!-- WIDGETS -->
-
-  <footer>
-    <div class="footer-row">
-      <div > </div>
-      <div >
-        <h3>Secciones</h3>
-        <a href=""> <h4>Inicio</h4> </a>
-        <a href="">  <h4>Blog académico</h4></a>
-        <a href="">  <h4>Acerca de</h4> </a>
-        <a href="">  <h4>Contáctanos</h4></a>
+      <div class="parallax-divider">
+        <h1 >Más información</h1>
       </div>
-      <div > </div>
-      <div>
-        <h3>Aplicaciones</h3>
-          <a href=""> <h4>Producto 1</h4></a>
-          <a href=""> <h4>Producto 2</h4> </a>
+      <div class="parallax">
+        <div class="right-div tag-up">
+          <img src="img/placeholder.png" alt="recursos">
+          <div>
+            <h1 >Recursos</h1>
+            <a href=""><p>fade in from below. Visit res</p> </a> 
+          </div>
+        </div>
+        <div class="left-div tag-up">
+          <div>
+            <h1 >Blog</h1>
+            <a href=""><p>fade in from below. Visit blog</p> </a> 
+          </div>
+          <img src="img/placeholder.png" alt="recursos">
+        </div>
+        
       </div>
-    </div>
-    <div class="social"> 
-      <!-- Facebook icon -->
-      <a href="https://www.facebook.com/" >
-        <i class="fab fa-facebook fa-xl"></i>
-      </a>
+    </main>
 
-      <!-- Twitter icon -->
-      <a href="https://twitter.com/">
-        <i class="fab fa-twitter fa-xl"></i>
-      </a>
-
-      <!-- Instagram icon -->
-      <a href="https://www.instagram.com/">
-        <i class="fab fa-instagram fa-xl"></i>
-      </a>
-    </div>
-  </footer>
-    
+    <!-- Pie de pagina -->
+    <footer class="footer-container">
+      <p>Copyright ©2023 CSS</p>
+      <section class="flex-container">
+          <a class="social-media flex-container"><i class=" fa-brands fa-facebook-f"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-tiktok"></i></a>
+      </section>
+    </footer>
+  </main>
 </body>
 
-<script src="js/main.js"></script>
-<script src="https://kit.fontawesome.com/620797aa98.js" crossorigin="anonymous"></script>
+<script src="js/main.js" defer></script>
+<script src="https://kit.fontawesome.com/620797aa98.js" crossorigin="anonymous" defer></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </html>

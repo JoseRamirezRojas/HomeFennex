@@ -47,7 +47,7 @@ const { createApp } = Vue
         observer1.observe(element);
       });
 
-      // fading in images from below
+      // fading in images from left
       var tags2 = document.querySelectorAll(".tag-right");
       const options2 = {
         root: null,
@@ -69,13 +69,33 @@ const { createApp } = Vue
         observer2.observe(element);
       });
 
+      // fading in images from right
+      var tags3 = document.querySelectorAll(".tag-left");
+      const options3 = {
+        root: null,
+        rootMargin: '0px',
+        threshold: .15   // percentage of visibility to trigger animation 
+      }
+      const callbacks3 = (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            entry.target.classList.add('visible');
+          }
+          else {
+            entry.target.classList.remove('visible'); //animates whenever elements return to viewport
+          }
+        });
+      }
+      let observer3 = new IntersectionObserver(callbacks3, options3); // checks if element intersect viewport
+      tags3.forEach(element => {
+        observer3.observe(element);
+      });
+
       // *****************************************
       // ****************CAROUSEL*****************
       // *****************************************
-      const itemsEl = document.querySelectorAll(".carousel-item");
-      const btnLeft = document.querySelector(".btn-carousel--left");
-      const btnRight = document.querySelector(".btn-carousel--right");
-
+      const items1 = document.querySelectorAll(".carousel-1-item");
+      const items2 = document.querySelectorAll(".carousel-2-item");
       const mediaQueryPhone = 600; //600px phone
       const mediaQueryTabPort = 900; //900px tab-port
       const mediaQueryTabLand = 1200; //1200px tab-land
@@ -84,9 +104,12 @@ const { createApp } = Vue
       let elemPerView;
 
       //Scroll counters
-      let scrollsLeft;
-      let scrollsRight;
-      let maxScrolls;
+      let scrollsLeft1;
+      let scrollsRight1;
+      let maxScrolls1;
+      let scrollsLeft2;
+      let scrollsRight2;
+      let maxScrolls2;
 
       //Detect currrent MEDIAQUERY
       const mediaSensor = function (width, height) {
@@ -122,21 +145,25 @@ const { createApp } = Vue
           //Three cards per view
           elemPerView = 3;
         }
-
         //Determine how many scrolls are allowed according with cards per view
-        maxScrolls = Math.ceil(itemsEl.length / elemPerView) - 1;
-
-        scrollsLeft = maxScrolls;
-        scrollsRight = 0;
+        maxScrolls1 = Math.ceil(items1.length / elemPerView) - 1;
+        scrollsLeft1 = maxScrolls1;
+        scrollsRight1 = 0;
+        maxScrolls2 = Math.ceil(items2.length / elemPerView) - 1;
+        scrollsLeft2 = maxScrolls2;
+        scrollsRight2 = 0;
 
 
         //Change size of cards
-        itemsEl.forEach((c, i) => {
+        items1.forEach((c, i) => {
+          c.style.left = `${(100 / elemPerView) * i }%`;
+          c.style.width = `${100 / elemPerView }%`;
+        });
+        items2.forEach((c, i) => {
           c.style.left = `${(100 / elemPerView) * i }%`;
           c.style.width = `${100 / elemPerView }%`;
         });
       };
-
       carouselInit();
 
       //Detect change in width of the window
@@ -148,39 +175,60 @@ const { createApp } = Vue
       });
 
       //BUTTONS CONTROLS
-
       //Move to right
-      btnRight.addEventListener("click", function () {
-
+      btnRight1.addEventListener("click", function () {
         //If you're not in max of scrolls
-        if (scrollsRight != maxScrolls) {
+        if (scrollsRight1 != maxScrolls1) {
           //Translate all cards to left
-          itemsEl.forEach((item) => {
+          items1.forEach((item) => {
             item.style.left = `calc(${item.style.left} + ${-100}%)`;
           });
-
-
           //Update scrolls counters
-          scrollsLeft--;
-          scrollsRight++;
+          scrollsLeft1--;
+          scrollsRight1++;
         }
       });
 
       //Move to left
-      btnLeft.addEventListener("click", function () {
-
+      btnLeft1.addEventListener("click", function () {
         //if you're not in max of scrolls
-        if (scrollsLeft != maxScrolls) {
+        if (scrollsLeft1 != maxScrolls1) {
           //Translate all cards to right
-          itemsEl.forEach((item) => {
+          items1.forEach((item) => {
             item.style.left = `calc(${item.style.left} + ${100}%)`;
           });
-
           //Update scrolls counters
-          scrollsLeft++;
-          scrollsRight--;
-  }
-});
+          scrollsLeft1++;
+          scrollsRight1--;
+        }
+      });
+
+      btnRight2.addEventListener("click", function () {
+        //If you're not in max of scrolls
+        if (scrollsRight2 != maxScrolls2) {
+          //Translate all cards to left
+          items2.forEach((item) => {
+            item.style.left = `calc(${item.style.left} + ${-100}%)`;
+          });
+          //Update scrolls counters
+          scrollsLeft2--;
+          scrollsRight2++;
+        }
+      });
+
+      //Move to left
+      btnLeft2.addEventListener("click", function () {
+        //if you're not in max of scrolls
+        if (scrollsLeft2 != maxScrolls2) {
+          //Translate all cards to right
+          items2.forEach((item) => {
+            item.style.left = `calc(${item.style.left} + ${100}%)`;
+          });
+          //Update scrolls counters
+          scrollsLeft2++;
+          scrollsRight2--;
+        }
+      });
     },
     methods:{
         /**
@@ -214,67 +262,8 @@ const { createApp } = Vue
           document.body.scrollTop = 0; // Safari
           document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
         },
-
-        /**
-         * Function that allows to scroll to a particular section of the page
-         * @param {HTMLHtmlElement}} element button pressed
-         * @param {Number} margin  pixels considering navbar
-         */
-        scrollToElement(element, margin = 20) {
-          const elemento = document.getElementById(element);
-          const elementoPosition = elemento.getBoundingClientRect().top;
-          const offsetPosition = elementoPosition + window.screenY - margin;
-          window.scrollTo({
-            top: offsetPosition
-          });
-        },
     },
     destroyed() {
         window.removeEventListener('scroll', this.scrollFunction);
     },
   }).mount('#app')
-
-
-// // slightly move banner image with cursor
-// const img = document.getElementById('fennex-image');
-// const imgWidth = img.offsetWidth;
-
-// img.addEventListener('mousemove', e => {
-//     const xPos = e.clientX;
-//     const xPercent = (xPos / window.innerWidth) * 100;
-//     const xMovement = (xPercent - 50) / 10;
-
-//     img.style.transform = `translate(${xMovement}px, 0`;  // movement acording to cursor position
-// });
-// img.addEventListener('mouseleave', e => {
-//     img.style.transform = 'translate(0px, 0px)';
-// });
-
-// // parallax effect
-// const parallaxBackground = document.querySelector('.parallax');
-// window.addEventListener('scroll', function() {
-//     const scrollTop = window.pageYOffset; // on scroll background moves slower
-//     const parallaxPosition = scrollTop * 0.5; 
-// });
-
-
-
-// // video carousel for tutorials section
-// const carousel = document.querySelector('.carousel');
-// const prevButton = document.querySelector('.prev-button');
-// const nextButton = document.querySelector('.next-button');
-
-// prevButton.addEventListener('click', () => {
-//   carousel.scrollBy({
-//     left: -carousel.offsetWidth,
-//     behavior: 'smooth'
-//   });
-// });
-
-// nextButton.addEventListener('click', () => {
-//   carousel.scrollBy({
-//     left: carousel.offsetWidth,
-//     behavior: 'smooth'
-//   });
-// });
-

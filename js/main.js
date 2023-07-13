@@ -30,7 +30,7 @@ const { createApp } = Vue
       const options1 = {
         root: null,
         rootMargin: '0px',
-        threshold: .15   // percentage of visibility to trigger animation 
+        threshold: .1  // percentage of visibility to trigger animation 
       }
       const callbacks1 = (entries) => {
         entries.forEach(entry => {
@@ -52,7 +52,7 @@ const { createApp } = Vue
       const options2 = {
         root: null,
         rootMargin: '0px',
-        threshold: .15   // percentage of visibility to trigger animation 
+        threshold: .1  // percentage of visibility to trigger animation 
       }
       const callbacks2 = (entries) => {
         entries.forEach(entry => {
@@ -74,7 +74,7 @@ const { createApp } = Vue
       const options3 = {
         root: null,
         rootMargin: '0px',
-        threshold: .15   // percentage of visibility to trigger animation 
+        threshold: .1   // percentage of visibility to trigger animation 
       }
       const callbacks3 = (entries) => {
         entries.forEach(entry => {

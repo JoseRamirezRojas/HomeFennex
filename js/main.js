@@ -3,11 +3,7 @@
  */
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
+  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? scrollTopBtn.style.display = "block" : scrollTopBtn.style.display = "none";
 }
 
 const { createApp } = Vue
@@ -26,69 +22,54 @@ const { createApp } = Vue
     },
     mounted(){
       // fading in images from below
-      var tags1 = document.querySelectorAll(".tag-up");
-      const options1 = {
+      var tagsFadeUp = document.querySelectorAll(".tag-up");
+      const optionsUp = {
         root: null,
         rootMargin: '0px',
         threshold: .1  // percentage of visibility to trigger animation 
       }
-      const callbacks1 = (entries) => {
+      const callbacksUp = (entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('visible');
-          }
-          else {
-            entry.target.classList.remove('visible'); //animates whenever elements return to viewport
-          }
+          entry.isIntersecting ? entry.target.classList.add('visible') : entry.target.classList.remove('visible'); //animates whenever elements return to viewport
         });
       }
-      let observer1 = new IntersectionObserver(callbacks1, options1); // checks if element intersect viewport
-      tags1.forEach(element => {
-        observer1.observe(element);
+      let observerUp = new IntersectionObserver(callbacksUp, optionsUp); // checks if element intersect viewport to trigger vertical animation
+      tagsFadeUp.forEach(element => {
+        observerUp.observe(element);
       });
 
       // fading in images from left
-      var tags2 = document.querySelectorAll(".tag-right");
-      const options2 = {
+      var tagsFadeRight = document.querySelectorAll(".tag-right");
+      const optionsRight = {
         root: null,
         rootMargin: '0px',
         threshold: .1  // percentage of visibility to trigger animation 
       }
-      const callbacks2 = (entries) => {
+      const callbacksBlogRight = (entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('visible');
-          }
-          else {
-            entry.target.classList.remove('visible'); //animates whenever elements return to viewport
-          }
+          entry.isIntersecting ? entry.target.classList.add('visible') : entry.target.classList.remove('visible'); //animates whenever elements return to viewport
         });
       }
-      let observer2 = new IntersectionObserver(callbacks2, options2); // checks if element intersect viewport
-      tags2.forEach(element => {
-        observer2.observe(element);
+      let observerBlogRight = new IntersectionObserver(callbacksBlogRight, optionsRight); // checks if element intersect viewport
+      tagsFadeRight.forEach(element => {
+        observerBlogRight.observe(element);
       });
 
       // fading in images from right
-      var tags3 = document.querySelectorAll(".tag-left");
-      const options3 = {
+      var tagsFadeLeft = document.querySelectorAll(".tag-left");
+      const optionsLeft = {
         root: null,
         rootMargin: '0px',
         threshold: .1   // percentage of visibility to trigger animation 
       }
-      const callbacks3 = (entries) => {
+      const callbacksBlogLeft = (entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting){
-            entry.target.classList.add('visible');
-          }
-          else {
-            entry.target.classList.remove('visible'); //animates whenever elements return to viewport
-          }
+          entry.isIntersecting ? entry.target.classList.add('visible') : entry.target.classList.remove('visible'); //animates whenever elements return to viewport
         });
       }
-      let observer3 = new IntersectionObserver(callbacks3, options3); // checks if element intersect viewport
-      tags3.forEach(element => {
-        observer3.observe(element);
+      let observerBlogLeft = new IntersectionObserver(callbacksBlogLeft, optionsLeft); // checks if element intersect viewport
+      tagsFadeLeft.forEach(element => {
+        observerBlogLeft.observe(element);
       });
 
       // *****************************************
